@@ -1,7 +1,7 @@
 # Hello. My name is Himanshu Bhisikar 👋
 
-**Machine Learning Scientist & Physicist**  
-*Applying Physics-Informed Neural Networks, Differentiable Modeling, and Scientific Machine Learning to Space Science & Astrodynamics.*
+## 📖 My Journey
+Driven by a passion for astrophysics that started at age 10, my quest to understand how nature works led me to IISER Pune, where I specialized in Physics. Following extensive academic research stints at the Inter-University Centre for Astronomy and Astrophysics (IUCAA), and the Indian Institute of Astrophysics (IIA), Bengaluru, I experienced firsthand how transformative scientific computing and machine learning are for modeling, predicting, and understanding complex physical systems. This realization sparked my transition into a Machine Learning Scientist—combining physics-informed neural networks, autograd constraints, and uncertainty calibration to bridge fundamental physical principles with modern data-driven intelligence.
 
 ---
 
