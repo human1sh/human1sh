@@ -15,15 +15,6 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ---
 
-## 🛠️ Technical Capabilities
-
-* **Scientific Machine Learning:** Physics-Informed Neural Networks (PINNs), Differentiable Physics, Temperature Scaling, Attention ResUNets, CNNs.
-* **Astrodynamics & Astronomy:** 3D Integral Field Spectroscopy (IFS), Multi-wavelength Synthesis, AstroSat/UVIT Data Processing, Orbital Mechanics.
-* **Languages & Frameworks:** Python, PyTorch, DeepXDE, SciPy, NumPy, Pandas, OpenCV, Scikit-learn, Astropy, Manim.
-* **Developer Workflows:** Linux (Ubuntu), Git/GitHub CI/CD, Pytest, VS Code, Zed.
-
----
-
 ## 🛠️ Tech Stack & Tooling
 
 ### 🤖 Scientific Machine Learning & Deep Learning
