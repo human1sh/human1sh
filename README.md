@@ -50,14 +50,14 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ---
 
-### 🌌 Astrophysics, Astronomy & Image Processing
+### 🌌 Astrophysics, Astronomy, Image Processing, Physical animations
 ![Astropy](https://img.shields.io/badge/Astropy-0C55A5?style=for-the-badge&logo=python&logoColor=white)
 ![Astroquery](https://img.shields.io/badge/Astroquery-FFD43B?style=for-the-badge&logo=python&logoColor=black)
 ![Photutils](https://img.shields.io/badge/Photutils-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Specutils](https://img.shields.io/badge/Specutils-8CAAE6?style=for-the-badge&logo=python&logoColor=white)
 ![Manim](https://img.shields.io/badge/Manim_Community-5C5C5C?style=for-the-badge&logo=python&logoColor=white)
 
-* **Domain Expertise:** 3D Integral Field Spectroscopy (IFS/IFU Data Cubes), Multi-Wavelength Synthesis (AstroSat/UVIT, DECaLS, ALMA CO), Aperture Photometry, Astronomical Image Reduction, Programmatic Physics Animations (*BounceTales14*).
+* **Domain Expertise:** 3D Integral Field Spectroscopy (IFS/IFU Data Cubes), Multi-Wavelength Synthesis (AstroSat/UVIT, DECaLS, ALMA CO), Aperture Photometry, Astronomical Image Reduction, Programmatic Physics Animations (*fysyx* youtube channel).
 
 ---
 
@@ -69,7 +69,6 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 ![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Zed](https://img.shields.io/badge/Zed_Editor-000000?style=for-the-badge&logo=zed&logoColor=white)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white)
 
 * **Engineering Practices:** Modular Python Package Architecture (`src/` layout), Automated Integration & Regression Testing (`pytest`), Configuration-Driven Training (`pyproject.toml`, YAML configs), Continuous Integration (CI) Actions.
 
