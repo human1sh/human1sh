@@ -7,6 +7,14 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ## 🚀 Featured Scientific ML Projects
 
+### 🌌 [GUARD: Geomagnetic Upstream Alert & Risk Detector](https://github.com/human1sh/guard-dst-prediction)
+- **Tech Stack:** `PyTorch` | `TCN-LSTM Networks` | `Physics-Informed ML` | `Asymmetric Loss` | `Cosine Annealing`
+- **Overview:** Built an end-to-end SciML pipeline forecasting Earth's geomagnetic $Dst$ index 1-hour ahead to provide real-time early warnings for geomagnetic storm threats.
+- **Physics & Benchmarks:** Pre-aligned L1 solar wind drivers by ballistic travel time ($\tau = X_{\text{L1}} / v_{\text{sw}}$), integrated Akasofu/Newell coupling terms and Burton kinetics, and trained with an asymmetric loss function penalizing under-predicted storm dips ($R^2 = 0.845$, $r = 0.920$, 100% severe storm detection rate).
+- **Engineering:** Modular `src/` package architecture (`dataset`, `model`, `loss`, `evaluate`), CLI configuration (`main.py`), and publication-quality diagnostic plotting.
+
+---
+
 ### 📡 [Orbital Conjunction Risk Model (Residual PINN)](https://github.com/human1sh/orbital-risk-pinn)
 * **Tech Stack:** `PyTorch` | `Physics-Informed Neural Networks` | `Autograd Constraints` | `Temperature Scaling`
 * **Overview:** Engineered an end-to-end SciML pipeline evaluating satellite collision avoidance maneuvers across 10,000+ LEO conjunction events.
