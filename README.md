@@ -7,6 +7,14 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ## 🚀 Featured Scientific ML Projects
 
+### ☀️ [CHAMP-PV: Constrained Hybrid Approach for Modeling Photovoltaics](https://github.com/human1sh/champ-pv)
+- **Tech Stack:** `PyTorch` | `Physics-Constrained Neural Networks` | `Autograd Penalties` | `HistGradientBoosting` | `Residual Learning`
+- **Overview:** Developed a physics-constrained hybrid neural network framework predicting daily solar Photovoltaic (PV) Performance Ratio ($\text{PR}$) across 111k+ operational days to solve out-of-distribution extrapolation on older, unseen panels.
+- **Physics & Formulation:** Embedded explicit algebraic formulas for system efficiency ($\eta_{\text{sys}}$), technology degradation ($d_{\text{tech}}$), cell temperature dynamics ($T_{\text{cell}}$), particulate soiling, and low-light attenuation with a zero-initialized, bounded neural residual multiplier ($1 + 0.25 \cdot \tanh(\text{NN}(x))$) and an autograd monotonic aging penalty ($\partial \text{PR} / \partial \text{age} \le 0$).
+- **Benchmarks & Results:** Completely eliminated physical aging monotonicity violations ($18.7\% \rightarrow 0.2\%$) under age extrapolation (train $<8\text{y}$, test $\ge 10\text{y}$), outperforming unconstrained MLPs and gradient boosting while leveraging residual magnitude for 100% inverter/string outage detection (**ROC-AUC = 1.0000**).
+
+---
+
 ### 🌌 [GUARD: Geomagnetic Upstream Alert & Risk Detector](https://github.com/human1sh/guard-dst-prediction)
 - **Tech Stack:** `PyTorch` | `TCN-LSTM Networks` | `Physics-Informed ML` | `Asymmetric Loss` | `Cosine Annealing`
 - **Overview:** Built an end-to-end SciML pipeline forecasting Earth's geomagnetic $Dst$ index 1-hour ahead to provide real-time early warnings for geomagnetic storm threats.
