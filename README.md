@@ -83,8 +83,10 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ## 📊 GitHub Highlights
 
-![Himanshu's GitHub Stats](https://github-readme-stats.vercel.app/api?username=human1sh&show_icons=true&theme=tokyonight)
+![Himanshu's GitHub Stats](https://github-readme-stats.vercel.app/api?username=human1sh&show_icons=true&theme=tokyonight&cache_bust=1)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=human1sh&layout=compact&theme=tokyonight)
+![Himanshu's Streak](https://github-readme-streak-stats.herokuapp.com/?user=human1sh&theme=tokyonight)
+![Himanshu's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=human1sh&theme=tokyo-night)
 
 ---
 
