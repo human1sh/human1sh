@@ -15,11 +15,11 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ---
 
-### 📡 [Orbital Conjunction Risk Model (Residual PINN)](https://github.com/human1sh/orbital-risk-pinn)
-* **Tech Stack:** `PyTorch` | `Physics-Informed Neural Networks` | `Autograd Constraints` | `Temperature Scaling`
-* **Overview:** Engineered an end-to-end SciML pipeline evaluating satellite collision avoidance maneuvers across 10,000+ LEO conjunction events.
-* **Physics & Calibration:** Enforced autograd gradient monotonicity constraints ($\partial P_{\text{risk}} / \partial r_{\text{miss}} \le 0$) and calibrated probability outputs ($T = 1.8767$, **ROC-AUC = 0.9321**, ECE = 0.037).
-* **Engineering:** Modular `src/` layout, automated `pytest` suite, YAML CLI workflows, and GitHub Actions CI pipeline.
+### 🛰️ [SPARTA: Spacecraft Physics & Astrodynamic Risk Trajectory Assessment](https://github.com/human1sh/SPARTA)
+- **Tech Stack:** `PyTorch` | `Physics-Informed Neural Networks` | `Autograd Constraints` | `Temperature Scaling` | `PowerTransformer`
+- **Overview:** Engineered a production-grade Scientific Machine Learning framework evaluating satellite collision avoidance maneuvers across 10,000+ LEO conjunction events.
+- **Physics & Calibration:** Enforced soft autograd gradient monotonicity constraints ($\partial P_{\text{risk}} / \partial r_{\text{miss}} \le 0$) to physically penalize non-decreasing collision risk against miss distance, combined with L-BFGS temperature scaling calibration ($T = 1.8767$, **ROC-AUC = 0.9818**, **ECE = 0.011**).
+- **Engineering:** Multi-variate telemetry feature ingestion (24+ signals including covariance ellipsoids and space weather indices), modular `src/` layout (`data`, `loss`, `models`, `plots`, `predict`, `train`, `utils`), automated `pytest` test suites, YAML CLI workflows, and GitHub Actions CI integration.
 
 ---
 
