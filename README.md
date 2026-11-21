@@ -7,6 +7,15 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ## 🚀 Featured Scientific ML Projects
 
+### 🛰️ [RADAR-HSI: Radiometric Analysis, Destriping & Automated Recognition for Hyperspectral Imagery](https://github.com/human1sh/RADAR-HSI)
+- **Tech Stack:** `PyTorch` | `3D Spatial-Spectral CNNs` | `SciML` | `Radiometric Restoration` | `SLIC Superpixels & OBIA` | `scikit-learn`
+- **Overview:** Engineered an end-to-end scientific machine learning pipeline for optical airborne remote sensing telemetry on the Pavia University dataset ($610 \times 340 \times 103$ datacube, $9$ land-cover classes), solving critical spatial data leakage, simulating forward optoelectronic flight noise, and discovering fine-grained intra-class material sub-clusters.
+- **Physics & Formulation:** Formulated a forward flight sensor degradation chain embedding Poisson photon shot noise ($10^4\,e^-$ full-well capacity), pushbroom column detector gain non-uniformity ($\sigma = 0.015$), electronic readout noise, and 12-bit ADC quantization ($26.76\text{ dB}$ baseline SNR). Built a localized moving-window ($W = 31$) column moment-matching destriper paired with Savitzky-Golay spectral filtering to suppress striping artifacts while preserving narrow mineral and vegetative absorption bands.
+- **Benchmarks & Results:** Quantified and proved a **$\sim 45\%$ spatial autocorrelation data leakage inflation** between naive random splitting and strict spatial block cuts ($95.3\% \rightarrow 50.8\%$). Engineered a joint 3D Spatial-Spectral CNN with guard-band spatial isolation achieving a **$+7.21\%$ generalization boost** over 1D spectral models, and combined SLIC superpixels with connected-component stratification to uncover **23 physical intra-class material sub-clusters** with zero class dropout.
+- **Engineering:** Modular `src/` layout (`dataset`, `phase1_baseline`, `phase2_simulator`, `phase2_restoration`, `phase3_spatial_nn`, `phase4a_unconstrained_slic`, `phase4b_constrained_discovery`, `utils`, `visualize`), comprehensive `pytest` test suites with synthetic hyperspectral generator, strict PEP 621 packaging (`pyproject.toml`), and publication-grade multi-panel diagnostic graphics.
+
+---
+
 ### ☀️ [CHAMP-PV: Constrained Hybrid Approach for Modeling Photovoltaics](https://github.com/human1sh/champ-pv)
 - **Tech Stack:** `PyTorch` | `Physics-Constrained Neural Networks` | `Autograd Penalties` | `HistGradientBoosting` | `Residual Learning`
 - **Overview:** Developed a physics-constrained hybrid neural network framework predicting daily solar Photovoltaic (PV) Performance Ratio ($\text{PR}$) across 111k+ operational days to solve out-of-distribution extrapolation on older, unseen panels.
