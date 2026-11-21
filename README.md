@@ -24,6 +24,15 @@ Driven by a passion for astrophysics that started at age 10, my quest to underst
 
 ---
 
+### 🛰️ [GEOSAR: Cross-Modal SAR & Optical Satellite Imagery Registration](https://github.com/human1sh/GEOSAR)
+- **Tech Stack:** `Python` | `Rasterio & GDAL` | `OpenCV` | `GeoPandas & Shapely` | `PyTorch` | `ONNX & ONNX Runtime` | `Streamlit`
+- **Overview:** Architected a high-precision, cross-modal georeferencing and feature-alignment pipeline for co-registering commercial X-band SAR (Umbra) and high-resolution optical imagery (Maxar) on the public SpaceNet 9 dataset, coupled with real INT8 edge quantization latency profiling for downstream multimodal sensor fusion.
+- **Physics & Formulation:** Formulated a zero-leakage geospatial patch-reading pipeline centering on physical map coordinates (UTM 37N projection, $0.6\text{ m}$ common grid) to eliminate coordinate-frame mismatch. Developed an 8-bin unsigned oriented-gradient channel representation to provide invariance against the severe radiometric contrast reversals characteristic of SAR specular backscatter versus optical surface reflectance. Designed Padfield-style masked normalized cross-correlation (NCC) with morphological margin erosion ($5\sigma$) to actively prevent zero-padded raster borders from generating false correlation peaks.
+- **Benchmarks & Results:** Cut median residual tie-point misregistration by **$63\%$** ($30.1\text{ m} \rightarrow 11.2\text{ m}$) on out-of-sample evaluation scenes ($02\_01$ and $03\_01$) with an $82\%$ improvement rate across $308$ real ground tie-points. Proved that classical SIFT feature matching totally fails under cross-modal sensor geometry (rejecting $100\%$ of patches due to low inlier ratios). Demonstrated static INT8 post-training quantization on a 4-channel multimodal fusion U-Net, achieving a **$2.3\times$ CPU inference speedup** ($291\text{ ms} \rightarrow 129\text{ ms}$) and **$73\%$ model compression** ($1.91\text{ MB} \rightarrow 0.52\text{ MB}$) with under $0.24\%$ relative logit drift.
+- **Engineering:** Production-grade modular architecture (`src/geo`, `src/registration`, `src/evaluate`, `src/edge_benchmark`, `src/gis_export`), automated GeoPackage (`.gpkg`) vector layer exports for GIS/QGIS integration, synthetic SAR/optical pair generator with speckle simulation for `pytest` unit suites, and an interactive multi-tab `Streamlit` web interface for misalignment diagnostics and error distribution visualization.
+
+---
+
 ### 🌌 [GUARD: Geomagnetic Upstream Alert & Risk Detector](https://github.com/human1sh/guard-dst-prediction)
 - **Tech Stack:** `PyTorch` | `TCN-LSTM Networks` | `Physics-Informed ML` | `Asymmetric Loss` | `Cosine Annealing`
 - **Overview:** Built an end-to-end SciML pipeline forecasting Earth's geomagnetic $Dst$ index 1-hour ahead to provide real-time early warnings for geomagnetic storm threats.
